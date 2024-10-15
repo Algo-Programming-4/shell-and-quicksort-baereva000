@@ -93,15 +93,20 @@ def partition(list, low, high):
             temp = list[low]
             list[low] = list[high]
             list[high] = temp
+            high -= 1
+            low += 1
 
     return (high)
     
 
 def quick(list, low, high):
+    print(list,low,high)
     if low >= high:
         return
     splitting = partition(list, low, high)
-    quick(list, low ,splitting - 1 )
+    print(splitting)
+    quick(list, low ,splitting)
+
     quick(list, splitting + 1, high)
 
     return list
