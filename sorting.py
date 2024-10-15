@@ -107,6 +107,6 @@ def quick(list, low, high):
 
     return list
 
-def quickSort(list):
+def quicksort(list):
     quick(list, 0, len(list) - 1)
 
