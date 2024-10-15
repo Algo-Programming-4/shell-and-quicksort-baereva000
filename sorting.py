@@ -109,4 +109,5 @@ def quick(list, low, high):
 
 def quicksort(list):
     quick(list, 0, len(list) - 1)
+    return list
 
