@@ -76,7 +76,6 @@ def shell(list):
 
 
 
-
 def partition(list, low, high):
     middle = (low + high)//2
     pivot = list[middle]
@@ -106,8 +105,8 @@ def quick(list, low, high):
     quick(list, splitting + 1, high)
 
     return list
-
-def quicksort(list):
+    
+def quickSort(list):
     quick(list, 0, len(list) - 1)
     return list
-
+    
