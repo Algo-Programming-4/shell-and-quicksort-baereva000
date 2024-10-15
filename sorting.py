@@ -100,11 +100,9 @@ def partition(list, low, high):
     
 
 def quick(list, low, high):
-    print(list,low,high)
     if low >= high:
         return
     splitting = partition(list, low, high)
-    print(splitting)
     quick(list, low ,splitting)
 
     quick(list, splitting + 1, high)
